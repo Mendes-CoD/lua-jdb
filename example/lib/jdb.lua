@@ -1,5 +1,5 @@
-local _ = require('underscore')
-local json = require('json')
+local _ = require('lib.underscore')
+local json = require('lib.json')
 
 local DB = {}
 local I = {}
