@@ -29,7 +29,7 @@ JDB is a is a simple library to work with json database
 ##### Finding all json string
 
 ```lua
-    db.find(table) --  Retruns a table of elements if the operation was       successful or nil
+    db.find(table) --  Retruns a table of elements if the operation was successful or nil
 ```
 
 ##### Get all file (database)
@@ -85,10 +85,10 @@ JDB is a is a simple library to work with json database
     local rem = db.remove({name = "Lesha"})
     print(rem) -- true
     
-    local remError = db.insert({name = "Jon"})
+    local remError = db.remove({name = "Jon"})
     print(remError) -- nil
     
-    local remError2 = db.insert('string')
+    local remError2 = db.remove('string')
     print(remError2) -- nil
     
     local f1 = db.find({name = "molimawka"}) 
