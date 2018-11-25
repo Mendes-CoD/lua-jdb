@@ -32,10 +32,10 @@ print(insError) -- nil
 local rem = db.remove({name = "Lesha"})
 print(rem) -- true
 
-local remError = db.insert({name = "Jon"})
+local remError = db.remove({name = "Jon"})
 print(remError) -- nil
 
-local remError2 = db.insert('string')
+local remError2 = db.remove('string')
 print(remError2) -- nil
 
 local f1 = db.find({name = "molimawka"}) 
